@@ -20,9 +20,6 @@ class ResultListVmImpl with _$ResultListVmImpl implements ResultListVm {
 
   @override
   void onKeywordChanged(String value) {
-    if (value == null) {
-      return;
-    }
     _keyword(value);
   }
 }
