@@ -31,13 +31,25 @@
 - アプリを実行
 
 ### パッケージの追加
-#### masonのインストール
+#### masonを使ってテンプレートからページフォルダを作成
+##### masonのインストール
 ```
 dart pub global activate mason_cli
-mason new -o .mason/templates mvvm
-mvvmの中身を作成
 mason add mvvm --path .mason/templates/mvvm
-mason make mvvm をプロジェクトのルートで実行し、検索ページを作成
+```
+
+##### テンプレートからページを作成
+以下をプロジェクトのルートで実行
+```
+mason make mvvm
+```
+
+その後､ページの名称を入力する(例: result_detail)
+
+##### 蛇足
+masonのテンプレートは以下のように作成する
+```
+mason new -o .mason/templates mvvm
 ```
 
 #### 各パッケージの追加
