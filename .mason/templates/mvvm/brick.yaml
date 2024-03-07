@@ -19,5 +19,5 @@ vars:
   page_name:
     type: string
     description: 作成するページの名前
-    default: test
+    default: result_detail
     prompt: 作成するページの名前を入力してください(機能名、末尾にpageはつけない)
